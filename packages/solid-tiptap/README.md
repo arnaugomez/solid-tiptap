@@ -20,6 +20,8 @@ yarn add @tiptap/core @tiptap/pm solid-tiptap
 pnpm add @tiptap/core @tiptap/pm solid-tiptap
 ```
 
+> **Note:** This version requires Tiptap 3.x. For Tiptap 2.x compatibility, use solid-tiptap@0.7.x
+
 ## Usage
 
 ```jsx
@@ -59,16 +61,6 @@ createEffect(() => {
 ```
 
 There are out-of-the-box utilities that wraps `createEditorTransaction` based on the [Editor API](https://www.tiptap.dev/api/editor):
-
-- `useEditorCharacterCount`: reactively subscribe to `getCharacterCount`.
-
-```js
-const count = useEditorCharacterCount(() => props.editor);
-
-createEffect(() => {
-  console.log('Character Count:', count());
-});
-```
 
 - `useEditorHTML`: reactively subscribe to `getEditorHTML`.
 
