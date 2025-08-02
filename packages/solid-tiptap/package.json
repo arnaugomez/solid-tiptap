@@ -28,8 +28,8 @@
   ],
   "name": "solid-tiptap",
   "devDependencies": {
-    "@tiptap/core": "^3.0.0",
-    "@tiptap/pm": "^3.0.0",
+    "@tiptap/core": "^3.0.1",
+    "@tiptap/pm": "^3.0.1",
     "@types/node": "^20.11.8",
     "pridepack": "2.6.0",
     "solid-js": "^1.8.12",
