@@ -20,8 +20,6 @@ yarn add @tiptap/core @tiptap/pm solid-tiptap
 pnpm add @tiptap/core @tiptap/pm solid-tiptap
 ```
 
-> **Note:** This version requires Tiptap 3.x. For Tiptap 2.x compatibility, use solid-tiptap@0.7.x
-
 ## Usage
 
 ```jsx
@@ -50,7 +48,7 @@ function App() {
 ```ts
 const isBold = createEditorTransaction(
   () => props.editor, // Editor instance from createTiptapEditor
-  (editor) => editor.isActive('bold'), 
+  (editor) => editor.isActive("bold")
 );
 
 createEffect(() => {
@@ -75,9 +73,13 @@ createEffect(() => {
 - `useEditorIsActive`: reactively subscribe to `isActive`.
 
 ```js
-const isHeading = useEditorIsActive(() => props.editor, () => 'heading', {
-  level: 1,
-});
+const isHeading = useEditorIsActive(
+  () => props.editor,
+  () => "heading",
+  {
+    level: 1,
+  }
+);
 
 createEffect(() => {
   if (isHeading()) {
